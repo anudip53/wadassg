@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: whitesmoke;
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    font-size: 180%;
+    display: table;
+    text-align: center;
+}
+
+.alert {
+    width: 80vw;
+    margin: 2rem auto;
+    background-color: #d4edda;
+    color: #57154e;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    display: none;
+}
+
+#reg-form {
+    position: relative;
+    width: auto;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+
+label {
+    margin: 1rem 0 0;
+    display: block;
+}
+
+input {
+    font-size: 0.875em;
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px 0px 15px;
+    background: whitesmoke;
+    outline: none;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+}
+
+input:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+@keyframes btn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button {
+    animation-name: btn;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: #349bab;
+    width: calc((100% / 2) - 3px);
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    height: 2.8rem;
+    border: none;
+    font-family: Nunito;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+
+
+select {
+    width: 100%;
+    height: 40px;
+    background: whitesmoke;
+    border: none;
+    padding: 0 0 0 0.5rem;
+    outline: none;
+}
+
+select:focus,
+input:focus {
+    outline: #57154e solid 2px;
+}
+
+@media screen and (min-width: 992px) {
+
+    #reg-form,
+    .alert {
+        width: 40vw;
+    }
+}

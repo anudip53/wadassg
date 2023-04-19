@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Web Page Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Set default font size and line height */
+        body {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Set max width and margin for main content container */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* Set background color and padding for header and footer */
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        /* Set font size and margin for main heading */
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Set column layout for main content */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Set width and margin for main content columns */
+        .col {
+            flex-basis: 100%;
+            margin-bottom: 1rem;
+        }
+
+        /* Set width and margin for main content columns on medium screens */
+        @media (min-width: 768px) {
+            .col {
+                flex-basis: 50%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>My Responsive Web Page</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel malesuada quam, eu porttitor
+                    nunc. Donec tincidunt velit vel lacus varius, eget aliquam purus fermentum. Sed ut felis sit amet
+                    nibh vulputate euismod. Quisque volutpat tincidunt sem, sed eleifend erat lacinia ac. Donec quis
+                    luctus dolor.</p>
+            </div>
+            <div class="col">
+                <h2>Column 2</h2>
+                <p>Sed sed dolor quis augue maximus tincidunt. Curabitur convallis lacus eget mauris suscipit ultrices.
+                    Duis tempor sapien vitae felis euismod facilisis. Sed tincidunt felis sed orci consectetur, non
+                    eleifend risus malesuada. Fusce ullamcorper tellus at ex venenatis facilisis.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Copyright © 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
